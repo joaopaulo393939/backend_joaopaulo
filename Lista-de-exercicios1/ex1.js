@@ -1,4 +1,4 @@
-let celsius = 25
-let fahrenheit = celsius * 1.8 + 32
-
-console.log(`${celsius}°C corresponde a ${fahrenheit}°F`)
+const input = require('readline-sync')
+const temp = input.question("qual o número da temperatura pra conversão?")
+let fahrenheit = temp * 1.8 + 32
+console.log(`${temp}°C corresponde a ${fahrenheit}°F`)
